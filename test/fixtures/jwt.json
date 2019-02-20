@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "lifeomnic-test",
+  "private_key_id": "906e8c069c7020410f9fd19834dc00707530cbb1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDFan8T6bg/5Kai\noHMfDdIuQPeaOLa0XaxC/wXxPOPDLX6b3Aawd50GNz4jariNcn+D8QBxHu129tEY\nYBA9QcGQFjp3x6LYZa517sNAnhkgOxE8udyQFBjZUzQ5nd2el9LMY+s6OsKsZZxr\nEG1HxmETgHNquMMJnl/pQ6jHyKq7gARtICHKBvOubxo0PCZTNuLVksImATs+emWZ\n7bScmCatGMVl1HUYbsM1fiRPakILYHgMdO/3/5TPEpui14n0pkfmkPGLOzhMiEzd\nGM1EJl5Wzptc/0vkJc5Gz/NLszc7ZTcFrXB61uLkFOxJbpF+BroqogggKs8YWXsr\nqBsUCRZDAgMBAAECgf9lZ87e6685Irp1zvVTfkX4fGazUW6IN5XE1Dq5MA3OtA/U\n/7Bv9QEzsCy7BJbIEYhuvdz8Pma8NQwy+SVeUeibms9tt55uicyTx5GEH7HIXI7+\nInqph6k7+QFalzy/uj0NwEWUI5rb81XlqQp5U+2JlvGyYDXPOwsJRzfrZ6hLpw9o\n3XuSatOvFB9c5WYS9drY929K6PhyBtal/91JK6KeG/Ola3AMcCbOfiSMk45nQPhN\nCkjTm0jbQVLouEEDrcCaGHe2r1dnBuQVMtRl8LBCVurIZ7hrtXHq57OR+ADJGDjS\nW4Pi53olEmVT6izmCFEkosfgCMJ7PbKXffm1c0UCgYEA66i7ksO2h8H0/peVo1Rp\nLAgyw+qjXr2j/M4jXrwJYDPPsW6+tKBm0JcnFYKVal4+Eqpn3tnyjUeJ7HWsimRw\nRRnhTF7cw7x0PWGb1pg+gCwX6XX+vavdivpJYXQ249T1G4hejUfluHpSvvpPQesd\nCBx0g3/oKdhuGRMQskc7QvcCgYEA1nS4erS+nGVcT1Cwtatd6crNb50B2d1QgMoo\nuo3AklLZAPlINF0Eo0xLecp1PuT8rkfAANRJKat4wlMLiFrOUB+4RS4Ey/9M60Dp\nLfdN54M8rcVHmzZ5MYgxp03oOpIMzsFKdo6Y2oANDGjMkSdvmloxj0/UZACl7KRj\nsHB6KBUCgYEA1jMDc65jDdiVSIgd4lyKUBSPmBaBMk8rbFEuQyClYQUXBk8EFogp\ni/Wn99w+1XUd9LdhPGVcG2BoFD8Neqk6hwS0DUe4YE2+VkCPdqnhPX1WqsSurFY4\nQ+elpWgNsF7T/5efYcl1G45MAfzg56i+Na4vlYtASjDIOhBjP7iRPBcCgYEAkelM\nc0ByyBo22kg+UvzLovw3Fo+u6LqpwVbKq1MzCNuRhhYVyHrZYvnQCId1iltmiHWM\n74OAW/es7BpwqE+QO/e4+mi7HskPXqkFfh7bRH+IU3r8o2BGySqvDfP145PnXu0o\nVQgke9XQCvdq5//68PwY6DcafQfr3Lxkj3GXy5kCgYBgWVUipmU0LnMlvKfPWSJU\nRmNLcKPTB5Ei3lA4OulqkuDEzkFkLPfhlAEXgj9kimwurUcCg8chqXk54IWh4mqq\nNEdkh1xPglKExrgKZ+WCxUH0u+IuwgVfulrC9Ax8UtusLg1UwfTFVA/pwc3581GQ\npOPvfR+4V/7Xk8wVZ51U7w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "lifeomnic-test@lifeomnic-test.iam.gserviceaccount.com",
+  "client_id": "101578452242261128327",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/lifeomnic-test%40lifeomnic-test.iam.gserviceaccount.com"
+}

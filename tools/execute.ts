@@ -13,9 +13,7 @@ async function run(): Promise<void> {
   const integrationConfig = {
     accountId: process.env.GSUITE_ACCOUNT_ID,
     email: process.env.GSUITE_SERVICE_ACCOUNT_EMAIL,
-    // FIXME: Use keyfile for temporary reasons should be just key
-    keyFile: process.env.GSUITE_KEYFILE,
-    // key: process.env.GSUITE_KEY,
+    key: process.env.GSUITE_KEY,
     subject: process.env.GSUITE_SUBJECT
   };
 

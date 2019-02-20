@@ -1,0 +1,56 @@
+{
+  "config": {
+    "url": "https://www.googleapis.com/admin/directory/v1/groups/02xcytpi12dg0el/members",
+    "method": "GET",
+    "headers": {
+      "Accept-Encoding": "gzip",
+      "User-Agent": "google-api-nodejs-client/0.7.2 (gzip)",
+      "Authorization": "Bearer ya29.GoIBtQYMg_0TCxswGD4LyBe1sNOYBCY9kA90D9mZ8NktcGdXQxGHbWds5yut_5X3PLoPxaqVjqQLK6RXW04pIMS7EF6XfT20v7Hx4laHer0-Wu6XUBTfQ3S-mZ0o3rEyntqh0xPAZq0g56HODyHiN6tSt88D13Fuwm4Kr35odugMk_QMLA",
+      "Accept": "application/json"
+    },
+    "params": {},
+    "responseType": "json"
+  },
+  "data": {
+    "kind": "admin#directory#members",
+    "etag": "\"GPUJN6YVAOElesyqxtgGs7jrFWY/Vj99AtCFjFLU6-q2QqKsiUavh8o\"",
+    "members": [
+      {
+        "kind": "admin#directory#member",
+        "etag": "\"GPUJN6YVAOElesyqxtgGs7jrFWY/Mmb9RMoyivXzv-kMYwtCr9lh-mk\"",
+        "id": "117552748374086910806",
+        "email": "andrew.kulakov@test.dualboot.com",
+        "role": "MANAGER",
+        "type": "USER",
+        "status": "ACTIVE"
+      },
+      {
+        "kind": "admin#directory#member",
+        "etag": "\"GPUJN6YVAOElesyqxtgGs7jrFWY/8xFiMxVxK5aicGy-2g-H4YxNsjA\"",
+        "id": "104221518650717901664",
+        "email": "test@test.dualboot.com",
+        "role": "MEMBER",
+        "type": "USER",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "headers": {
+    "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+    "cache-control": "private, max-age=0, must-revalidate, no-transform",
+    "connection": "close",
+    "content-encoding": "gzip",
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 19 Feb 2019 14:11:42 GMT",
+    "etag": "\"GPUJN6YVAOElesyqxtgGs7jrFWY/Vj99AtCFjFLU6-q2QqKsiUavh8o\"",
+    "expires": "Tue, 19 Feb 2019 14:11:42 GMT",
+    "server": "GSE",
+    "transfer-encoding": "chunked",
+    "vary": "Origin, X-Origin",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-xss-protection": "1; mode=block"
+  },
+  "status": 200,
+  "statusText": "OK"
+}

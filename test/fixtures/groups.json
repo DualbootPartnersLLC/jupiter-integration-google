@@ -1,0 +1,64 @@
+{
+  "config": {
+    "url": "https://www.googleapis.com/admin/directory/v1/groups?customer=C04g39dqe",
+    "method": "GET",
+    "headers": {
+      "Accept-Encoding": "gzip",
+      "User-Agent": "google-api-nodejs-client/0.7.2 (gzip)",
+      "Authorization": "Bearer ya29.GoIBtQYMg_0TCxswGD4LyBe1sNOYBCY9kA90D9mZ8NktcGdXQxGHbWds5yut_5X3PLoPxaqVjqQLK6RXW04pIMS7EF6XfT20v7Hx4laHer0-Wu6XUBTfQ3S-mZ0o3rEyntqh0xPAZq0g56HODyHiN6tSt88D13Fuwm4Kr35odugMk_QMLA",
+      "Accept": "application/json"
+    },
+    "params": { "customer": "C04g39dqe" },
+    "responseType": "json"
+  },
+  "data": {
+    "kind": "admin#directory#groups",
+    "etag": "\"GPUJN6YVAOElesyqxtgGs7jrFWY/IVPWskqdFMhkCir_N04Ez27YY4c\"",
+    "groups": [
+      {
+        "kind": "admin#directory#group",
+        "id": "01opuj5n1n02967",
+        "etag": "\"GPUJN6YVAOElesyqxtgGs7jrFWY/dpE_wXOknLE5JBdEBFdk3x9jDXI\"",
+        "email": "restricted.test@test.dualboot.com",
+        "name": "Restircted Test Group",
+        "directMembersCount": "1",
+        "description": "",
+        "adminCreated": true,
+        "nonEditableAliases": [
+          "restricted.test@test.dualboot.com.test-google-a.com"
+        ]
+      },
+      {
+        "kind": "admin#directory#group",
+        "id": "02xcytpi12dg0el",
+        "etag": "\"GPUJN6YVAOElesyqxtgGs7jrFWY/RXsdKoBxBZY43vAeDt3_mFEZaGo\"",
+        "email": "team.test.group@test.dualboot.com",
+        "name": "Team Test Group",
+        "directMembersCount": "2",
+        "description": "",
+        "adminCreated": true,
+        "nonEditableAliases": [
+          "team.test.group@test.dualboot.com.test-google-a.com"
+        ]
+      }
+    ]
+  },
+  "headers": {
+    "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+    "cache-control": "private, max-age=0, must-revalidate, no-transform",
+    "connection": "close",
+    "content-encoding": "gzip",
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 19 Feb 2019 14:11:42 GMT",
+    "etag": "\"GPUJN6YVAOElesyqxtgGs7jrFWY/IVPWskqdFMhkCir_N04Ez27YY4c\"",
+    "expires": "Tue, 19 Feb 2019 14:11:42 GMT",
+    "server": "GSE",
+    "transfer-encoding": "chunked",
+    "vary": "Origin, X-Origin",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-xss-protection": "1; mode=block"
+  },
+  "status": 200,
+  "statusText": "OK"
+}

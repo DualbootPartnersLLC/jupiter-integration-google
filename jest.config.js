@@ -1,18 +1,14 @@
 module.exports = {
   transform: {
-    '^.+\\.tsx?$': 'ts-jest'
+    "^.+\\.tsx?$": "ts-jest"
   },
-  testMatch: [
-    '<rootDir>/**/*.test.{js,ts}'
-  ],
-  collectCoverageFrom: ['src/**/*.ts'],
-  coveragePathIgnorePatterns: [
-    '<rootDir>/src/index.ts'
-  ],
-  moduleFileExtensions: ['ts', 'js'],
-  testEnvironment: 'node',
+  testMatch: ["<rootDir>/**/*.test.{js,ts}"],
+  collectCoverageFrom: ["src/**/*.ts"],
+  coveragePathIgnorePatterns: ["<rootDir>/src/index.ts"],
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json"],
+  testEnvironment: "node",
   clearMocks: true,
-  collectCoverage: true,
+  collectCoverage: false,
   coverageThreshold: {
     global: {
       statements: 100,

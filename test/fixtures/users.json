@@ -1,0 +1,143 @@
+{
+  "config": {
+    "url": "https://www.googleapis.com/admin/directory/v1/users?customer=C04g39dqe",
+    "method": "GET",
+    "headers": {
+      "Accept-Encoding": "gzip",
+      "User-Agent": "google-api-nodejs-client/0.7.2 (gzip)",
+      "Authorization": "Bearer ya29.GoIBtQYMg_0TCxswGD4LyBe1sNOYBCY9kA90D9mZ8NktcGdXQxGHbWds5yut_5X3PLoPxaqVjqQLK6RXW04pIMS7EF6XfT20v7Hx4laHer0-Wu6XUBTfQ3S-mZ0o3rEyntqh0xPAZq0g56HODyHiN6tSt88D13Fuwm4Kr35odugMk_QMLA",
+      "Accept": "application/json"
+    },
+    "params": { "customer": "C04g39dqe" },
+    "responseType": "json"
+  },
+  "data": {
+    "kind": "admin#directory#users",
+    "etag": "\"GPUJN6YVAOElesyqxtgGs7jrFWY/DcPG-QyPxW6kIlRQcBAw9y4tsYM\"",
+    "users": [
+      {
+        "kind": "admin#directory#user",
+        "id": "117552748374086910806",
+        "etag": "\"GPUJN6YVAOElesyqxtgGs7jrFWY/_zaFZteCL0r673-3Z8E_ix87QNw\"",
+        "primaryEmail": "andrew.kulakov@test.dualboot.com",
+        "name": {
+          "givenName": "Andrew",
+          "familyName": "Kulakov",
+          "fullName": "Andrew Kulakov"
+        },
+        "isAdmin": true,
+        "isDelegatedAdmin": false,
+        "lastLoginTime": "2019-02-12T11:42:33.000Z",
+        "creationTime": "2019-01-28T17:42:32.000Z",
+        "agreedToTerms": true,
+        "suspended": false,
+        "archived": false,
+        "changePasswordAtNextLogin": false,
+        "ipWhitelisted": false,
+        "emails": [
+          { "address": "andrew.kulakov@dualbootpartners.com", "type": "work" },
+          { "address": "andrew.kulakov@test.dualboot.com", "primary": true },
+          { "address": "andrew.kulakov@test.dualboot.com.test-google-a.com" },
+          { "address": "andrew@test.dualboot.com" },
+          { "address": "andrew@test.dualboot.com.test-google-a.com" },
+          { "address": "kulakov@test.dualboot.com" },
+          { "address": "kulakov@test.dualboot.com.test-google-a.com" }
+        ],
+        "aliases": ["andrew@test.dualboot.com", "kulakov@test.dualboot.com"],
+        "nonEditableAliases": [
+          "andrew.kulakov@test.dualboot.com.test-google-a.com",
+          "kulakov@test.dualboot.com.test-google-a.com",
+          "andrew@test.dualboot.com.test-google-a.com"
+        ],
+        "customerId": "C04g39dqe",
+        "orgUnitPath": "/",
+        "isMailboxSetup": true,
+        "isEnrolledIn2Sv": false,
+        "isEnforcedIn2Sv": false,
+        "includeInGlobalAddressList": true
+      },
+      {
+        "kind": "admin#directory#user",
+        "id": "103149248513546310171",
+        "etag": "\"GPUJN6YVAOElesyqxtgGs7jrFWY/y25ZdINZzVAR37bhApqlbGVeeVc\"",
+        "primaryEmail": "ben.gilman@test.dualboot.com",
+        "name": {
+          "givenName": "Ben",
+          "familyName": "Gilman",
+          "fullName": "Ben Gilman"
+        },
+        "isAdmin": true,
+        "isDelegatedAdmin": false,
+        "lastLoginTime": "2019-01-30T11:44:02.000Z",
+        "creationTime": "2019-01-28T17:32:12.000Z",
+        "agreedToTerms": true,
+        "suspended": false,
+        "archived": false,
+        "changePasswordAtNextLogin": false,
+        "ipWhitelisted": false,
+        "emails": [
+          { "address": "ben.gilman@test.dualboot.com", "primary": true },
+          { "address": "ben.gilman@test.dualboot.com.test-google-a.com" }
+        ],
+        "nonEditableAliases": [
+          "ben.gilman@test.dualboot.com.test-google-a.com"
+        ],
+        "customerId": "C04g39dqe",
+        "orgUnitPath": "/",
+        "isMailboxSetup": true,
+        "isEnrolledIn2Sv": false,
+        "isEnforcedIn2Sv": false,
+        "includeInGlobalAddressList": true
+      },
+      {
+        "kind": "admin#directory#user",
+        "id": "104221518650717901664",
+        "etag": "\"GPUJN6YVAOElesyqxtgGs7jrFWY/fJ1sXMD9dGOa08hdg-FUHxWI3Uk\"",
+        "primaryEmail": "test@test.dualboot.com",
+        "name": {
+          "givenName": "Test",
+          "familyName": "user",
+          "fullName": "Test user"
+        },
+        "isAdmin": false,
+        "isDelegatedAdmin": false,
+        "lastLoginTime": "1970-01-01T00:00:00.000Z",
+        "creationTime": "2019-01-30T15:20:22.000Z",
+        "agreedToTerms": true,
+        "suspended": false,
+        "archived": false,
+        "changePasswordAtNextLogin": true,
+        "ipWhitelisted": false,
+        "emails": [
+          { "address": "test@test.dualboot.com", "primary": true },
+          { "address": "test@test.dualboot.com.test-google-a.com" }
+        ],
+        "nonEditableAliases": ["test@test.dualboot.com.test-google-a.com"],
+        "customerId": "C04g39dqe",
+        "orgUnitPath": "/",
+        "isMailboxSetup": true,
+        "isEnrolledIn2Sv": false,
+        "isEnforcedIn2Sv": false,
+        "includeInGlobalAddressList": true
+      }
+    ]
+  },
+  "headers": {
+    "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+    "cache-control": "private, max-age=0, must-revalidate, no-transform",
+    "connection": "close",
+    "content-encoding": "gzip",
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 19 Feb 2019 14:11:41 GMT",
+    "etag": "\"GPUJN6YVAOElesyqxtgGs7jrFWY/DcPG-QyPxW6kIlRQcBAw9y4tsYM\"",
+    "expires": "Tue, 19 Feb 2019 14:11:41 GMT",
+    "server": "GSE",
+    "transfer-encoding": "chunked",
+    "vary": "Origin, X-Origin",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-xss-protection": "1; mode=block"
+  },
+  "status": 200,
+  "statusText": "OK"
+}

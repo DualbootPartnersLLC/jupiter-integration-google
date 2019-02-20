@@ -12,9 +12,7 @@ export default async function initializeContext(
 
   const provider = new GSuiteClient(config.accountId, {
     email: config.email,
-    // FIXME: Use keyfile for temporary reasons should be just key
-    keyFile: config.keyFile,
-    // key: config.key,
+    key: config.key,
     subject: config.subject
   });
   await provider.authenticate();
