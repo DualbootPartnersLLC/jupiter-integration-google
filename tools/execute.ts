@@ -16,11 +16,16 @@ async function run(): Promise<void> {
     subject: process.env.GSUITE_SUBJECT
   };
 
+  const invocationArgs = {
+    // providerPrivateKey: process.env.PROVIDER_LOCAL_EXECUTION_PRIVATE_KEY
+  };
+
   logger.info(
     await executeSingleHandlerLocal(
       integrationConfig,
       logger,
       executionHandler,
+      invocationArgs,
       createLocalInvocationEvent()
     ),
     "Execution completed successfully!"

@@ -64,6 +64,19 @@ test("Convert Groups", async () => {
       id: "2",
       kind: "admin#directory#group",
       name: "Team Test Group"
+    },
+    {
+      _class: "UserGroup",
+      _key: "gsuite-group-id-",
+      _type: "gsuite_group",
+      adminCreated: true,
+      description: "",
+      directMembersCount: "0",
+      displayName: "Empty Test Group",
+      email: "restricted.test1@example.com",
+      id: "",
+      kind: "admin#directory#group",
+      name: "Empty Test Group"
     }
   ]);
 });
