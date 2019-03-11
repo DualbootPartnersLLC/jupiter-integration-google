@@ -9,7 +9,7 @@ import {
 import { generateAccountKey } from "./AccountEntityConverter";
 import { generatePasswordPolicyKey } from "./PasswordPolicyEntityConverter";
 
-export function createUserPasswordPolicyRelationships(
+export function createAccountPasswordPolicyRelationships(
   users: User[],
   account: Account
 ): AccountPasswordPolicyRelationship[] {

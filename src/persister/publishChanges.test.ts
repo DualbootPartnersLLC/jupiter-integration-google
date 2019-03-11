@@ -1,5 +1,6 @@
-import { GSuiteClient } from "../gsuite";
+import { createTestIntegrationExecutionContext } from "@jupiterone/jupiter-managed-integration-sdk";
 import fetchGsuiteData from "../gsuite/fetchGsuiteData";
+import initializeContext from "../initializeContext";
 
 import { convert } from "./publishChanges";
 
@@ -23,20 +24,27 @@ jest.mock("googleapis", () => {
 
 jest.mock("google-auth-library");
 
-async function getGsuiteData() {
-  const provider = new GSuiteClient("fakeId", {
-    email: "fake_email",
-    key: "fake_key",
-    subject: "fake_subject"
-  });
+async function initialize() {
+  const options = {
+    instance: {
+      config: {
+        accountId: "fakeId",
+        creds:
+          '{"email": "fake_email", "key": "fake_key", "subject": "fake_subject"}'
+      },
+      id: "",
+      name: "gsuite_name"
+    }
+  };
 
-  await provider.authenticate();
+  const context = createTestIntegrationExecutionContext(options);
 
-  return await fetchGsuiteData(provider);
+  return await initializeContext(context);
 }
 
 test("Convert Groups", async () => {
-  const newData = convert(await getGsuiteData());
+  const { provider, account } = await initialize();
+  const newData = convert(await fetchGsuiteData(provider), account);
 
   expect(newData.groups).toEqual([
     {
@@ -82,7 +90,8 @@ test("Convert Groups", async () => {
 });
 
 test("Convert Users", async () => {
-  const newData = convert(await getGsuiteData());
+  const { provider, account } = await initialize();
+  const newData = convert(await fetchGsuiteData(provider), account);
 
   expect(newData.users).toEqual([
     {
@@ -233,7 +242,8 @@ test("Convert Users", async () => {
 });
 
 test("Convert Users -> Group Relationships", async () => {
-  const newData = convert(await getGsuiteData());
+  const { provider, account } = await initialize();
+  const newData = convert(await fetchGsuiteData(provider), account);
 
   expect(newData.userGroupRelationships).toEqual([
     {
@@ -351,14 +361,15 @@ test("Convert Users -> Group Relationships", async () => {
   ]);
 });
 
-test("Convert Users -> Group Relationships", async () => {
-  const newData = convert(await getGsuiteData());
+test("Convert Password Policies", async () => {
+  const { provider, account } = await initialize();
+  const newData = convert(await fetchGsuiteData(provider), account);
 
   expect(newData.passwordPolicies).toEqual([
     {
       _class: "PasswordPolicy",
       _key: "gsuite-password-policy-user-3",
-      _type: "gsuite_password_policy",
+      _type: "gsuite_user_password_policy",
       requireMFA: false,
       isEnforcedIn2Sv: false,
       isEnrolledIn2Sv: false
@@ -366,7 +377,7 @@ test("Convert Users -> Group Relationships", async () => {
     {
       _class: "PasswordPolicy",
       _key: "gsuite-password-policy-user-4",
-      _type: "gsuite_password_policy",
+      _type: "gsuite_user_password_policy",
       requireMFA: false,
       isEnforcedIn2Sv: true,
       isEnrolledIn2Sv: false
@@ -374,7 +385,7 @@ test("Convert Users -> Group Relationships", async () => {
     {
       _class: "PasswordPolicy",
       _key: "gsuite-password-policy-user-5",
-      _type: "gsuite_password_policy",
+      _type: "gsuite_user_password_policy",
       requireMFA: false,
       isEnforcedIn2Sv: false,
       isEnrolledIn2Sv: true
@@ -382,7 +393,7 @@ test("Convert Users -> Group Relationships", async () => {
     {
       _class: "PasswordPolicy",
       _key: "gsuite-password-policy-user-6",
-      _type: "gsuite_password_policy",
+      _type: "gsuite_user_password_policy",
       isEnforcedIn2Sv: true,
       isEnrolledIn2Sv: true,
       requireMFA: true
@@ -391,7 +402,9 @@ test("Convert Users -> Group Relationships", async () => {
 });
 
 test("Convert User -> PasswordPolicy Relationships", async () => {
-  const newData = convert(await getGsuiteData());
+  const { provider, account } = await initialize();
+  const newData = convert(await fetchGsuiteData(provider), account);
+
   expect(newData.userPasswordPolicyRelationships).toEqual([
     {
       _key: "gsuite-user-id-3_has_gsuite-password-policy-user-3",
@@ -420,6 +433,21 @@ test("Convert User -> PasswordPolicy Relationships", async () => {
       _key: "gsuite-user-id-6_has_gsuite-password-policy-user-6",
       _toEntityKey: "gsuite-password-policy-user-6",
       _type: "gsuite_user_password_policy"
+    }
+  ]);
+});
+
+test("Convert Account", async () => {
+  const { provider, account } = await initialize();
+  const newData = convert(await fetchGsuiteData(provider), account);
+
+  expect(newData.accounts).toEqual([
+    {
+      _key: "gsuite-account-key-fakeId",
+      _type: "gsuite_account",
+      _class: "Account",
+      displayName: "gsuite_name",
+      name: "gsuite_name"
     }
   ]);
 });
